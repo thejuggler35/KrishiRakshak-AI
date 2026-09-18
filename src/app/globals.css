@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfbf7;
+  --foreground: #1c1917;
+  --primary-green: #15803d;
+  --primary-green-dark: #166534;
+  --accent-earth: #b45309;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Ensure accessible tap targets and readable text */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Prevent horizontal overflow on small devices */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for subtle appearance */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1efe9;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3cc;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
